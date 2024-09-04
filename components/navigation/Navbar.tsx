@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const NavbarComponent = () => {
   return (
-    <Navbar shouldHideOnScroll maxWidth={"full"} className="bg-white p-[0.4rem] pl-[5rem] pr-[5rem] z-[9999]">
-      <NavbarBrand className="flex gap-3">
+    <Navbar shouldHideOnScroll maxWidth={"full"} className="bg-white p-[0.4rem] md:pl-[5rem] md:pr-[5rem] z-[9999]">
+      <NavbarBrand className="flex gap-3 max-md:items-center max-md:justify-center ">
         <Image src={asset.logo} alt="logo" width={100} height={100} />
-        <h1 className="text-[2.5rem] font-bold">LilDiary</h1>
+        <h1 className="text-[2.5rem] font-bold max-md:hidden">LilDiary</h1>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>

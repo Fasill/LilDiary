@@ -25,7 +25,7 @@ const Home = () => {
     
         </div>
         <div  className='flex items-center justify-end w-[100%]'>
-          <div className=' flex flex-col items-center justify-center gap-[2rem]'>
+          <div className=' flex flex-col items-center justify-center gap-[2rem] max-md:hidden'>
             <Image src={asset.iphone} alt='home' width={350} height={100} />
             <div className=' self-end flex gap-[2rem] '>
               <Button className='text-white2 text-[1.3rem] bg-[rgb(14,14,14)]'><FaApple/><p>App Stores</p></Button>

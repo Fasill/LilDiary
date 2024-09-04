@@ -9,6 +9,7 @@ const NavbarComponent = () => {
     <Navbar shouldHideOnScroll maxWidth={"full"} className="bg-white">
       <NavbarBrand>
         <Image src={asset.logo} alt="logo" width={100} height={100} />
+        LilDiary
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>

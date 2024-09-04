@@ -39,7 +39,7 @@ const FeatureCards = ()=> {
       <CardFooter className="absolute bg-black/80  bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between transform transition-transform duration-300 translate-y-[100%] group-hover:translate-y-[2px]">
 
             <p className="text-[#fcfcfc]  text-[0.9rem]"> 
-            Never wonder if you tracked your little one’s first step, first tooth, or other milestones. LillDiary lets you log these key moments and will automatically compile milestone memories in your child’s timeline.            </p>
+            Never wonder if you tracked your little one&apos;s first step, first tooth, or other milestones. LillDiary lets you log these key moments and will automatically compile milestone memories in your child&apos;s timeline.            </p>
           
       </CardFooter>
     </Card>
@@ -77,7 +77,7 @@ const FeatureCards = ()=> {
      <CardFooter className="absolute bg-black/80  bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between transform transition-transform duration-300 translate-y-[100%] group-hover:translate-y-[2px]">
 
 <p className="text-[#fcfcfc]  text-[0.9rem]"> 
-            Invite grandparents, relatives or friends to add their own photos and stories to your child’s diary. LillDiary makes sharing simple with customizable access controls, ensuring entries remain private until you decide to share more publicly. </p>
+            Invite grandparents, relatives or friends to add their own photos and stories to your child&apos;s diary. LillDiary makes sharing simple with customizable access controls, ensuring entries remain private until you decide to share more publicly. </p>
           
       </CardFooter>
     </Card>
@@ -97,9 +97,9 @@ const FeatureCards = ()=> {
      <CardFooter className="absolute bg-black/80  bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between transform transition-transform duration-300 translate-y-[100%] group-hover:translate-y-[2px]">
 
 <p className="text-[#fcfcfc]  text-[0.9rem]"> 
-            At LillDiary, we strive to build lifelong connections between parents and children through saved memories. Much more than just a baby book, your child’s LillDiary grows alongside them, chronicling precious moments from every stage.
+            At LillDiary, we strive to build lifelong connections between parents and children through saved memories. Much more than just a baby book, your child&apos;s LillDiary grows alongside them, chronicling precious moments from every stage.
 We invite you to join millions of other families already using LillDiary to effortlessly capture photos, videos, milestones and memories without fear of lost photos, privacy concerns, or storage limits.
-Sign up today for your free account and start building your family’s LillDiary! Capture your children’s childhoods to cherish for a lifetime and pass on to future generations.</p>
+Sign up today for your free account and start building your family&apos;s LillDiary! Capture your children&apos;s childhoods to cherish for a lifetime and pass on to future generations.</p>
           
       </CardFooter>
     </Card>

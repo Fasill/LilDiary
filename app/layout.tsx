@@ -33,17 +33,11 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body
-        className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}
-      >
+      <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div 
-            className="relative flex flex-col h-screen"
-            >
+          <div className="relative flex flex-col h-screen">
             <component.Navbar/>
-            <main 
-            // className="container mx-auto max-w-7xl pt-16 px-6 flex-grow"
-              >
+            <main>
               {children}
             </main>
           </div>

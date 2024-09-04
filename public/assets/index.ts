@@ -10,7 +10,7 @@ import featureImg5 from '@/public/assets/features/img5.jpg'
 import featureImg6 from '@/public/assets/features/img6.jpg' 
 import featureImg7 from '@/public/assets/features/img7.jpg' 
 import featureImg8 from '@/public/assets/features/img8.jpg' 
-
+import iphone from '@/public/assets/backgrounds/iphone.png'
 const asset = {
     logo,
     bg1,
@@ -22,7 +22,8 @@ const asset = {
     featureImg5,
     featureImg6,
     featureImg7,
-    featureImg8
+    featureImg8,
+    iphone
 
 };
 export default asset;

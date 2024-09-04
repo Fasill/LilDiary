@@ -1,6 +1,8 @@
 
 
+import asset from '@/public/assets';
 import { Button } from '@nextui-org/button'
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
@@ -19,17 +21,17 @@ const Home = () => {
             Capture Your Family&apos;s Precious Memories with LillDiary
           </h1>
           <p className='text-black text-[1.5rem] w-[80%] text-center '>
-          We help parents create online diaries to capture their child's precious milestones."                    </p>
-          {/* <Button as={Link} color="primary" href="#" variant="flat" className="text-2xl font-sans learn-more-button ">
-            Learn More
-            <FaArrowRight className="arrow-icon" />
-          </Button> */}
+          We help parents create online diaries to capture their child&lsquo;s precious milestones.                   </p>
+    
         </div>
         <div  className='flex items-center justify-end w-[100%]'>
-          <div className=' self-end flex gap-[2rem] '>
-            <Button className='text-white2 text-[1.3rem] bg-[rgb(14,14,14)]'><FaApple/><p>App Stores</p></Button>
-            <Button className='text-white2 text-[1.3rem] bg-[rgb(14,14,14)]'><FaGooglePlay/><p>Google Play</p></Button>
+          <div className=' flex flex-col items-center justify-center gap-[2rem]'>
+            <Image src={asset.iphone} alt='home' width={350} height={100} />
+            <div className=' self-end flex gap-[2rem] '>
+              <Button className='text-white2 text-[1.3rem] bg-[rgb(14,14,14)]'><FaApple/><p>App Stores</p></Button>
+              <Button className='text-white2 text-[1.3rem] bg-[rgb(14,14,14)]'><FaGooglePlay/><p>Google Play</p></Button>
 
+            </div>
           </div>
         </div>
       </div>

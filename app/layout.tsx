@@ -4,7 +4,7 @@ import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans,fontMono } from "@/config/fonts";
+import { fontMono } from "@/config/fonts";
 import component from "@/components/index";
 
 export const metadata: Metadata = {

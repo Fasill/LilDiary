@@ -6,19 +6,19 @@ import Image from "next/image";
 
 const NavbarComponent = () => {
   return (
-    <Navbar shouldHideOnScroll maxWidth={"full"} className="bg-white">
+    <Navbar shouldHideOnScroll maxWidth={"full"} className="bg-white p-[0.4rem]">
       <NavbarBrand>
         <Image src={asset.logo} alt="logo" width={100} height={100} />
         LilDiary
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#" className="text-xl font-sans">
+          <Link color="foreground" aria-current="page" href="#" className="text-xl font-sans">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page" className="text-xl font-sans">
+          <Link href="#"  className="text-xl font-sans">
             Our services
           </Link>
         </NavbarItem>

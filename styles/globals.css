@@ -1,26 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* Apply the Poppins font globally */
+body {
+    @apply font-sans;
+}
+
 .myHome {
-    background-image: url('../public/assets/backgrounds/bg1.jpg');
+    background-image: url('../public/assets/features/img4.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
     transform: scaleX(-1); 
-
 }
+
 .learn-more-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .learn-more-button .arrow-icon {
+}
+
+.learn-more-button .arrow-icon {
     transition: transform 0.3s ease;
-  }
-  
-  .learn-more-button:hover .arrow-icon {
+}
+
+.learn-more-button:hover .arrow-icon {
     transform: translateX(5px);
-  }
-  
+}

@@ -5,7 +5,7 @@ import asset from "@/public/assets/index";
 
 const FeatureCards = ()=> {
   return (
-    <div className="max-w-[1500px] gap-[2rem] grid grid-cols-12 grid-rows-2 px-8 ">
+    <div className="max-w-[1100px] gap-[2rem] grid grid-cols-12 grid-rows-2 px-8 ">
     <Card className="col-span-12 sm:col-span-4 h-[300px] group">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
         <h4 className="text-white  text-[1.3rem] font-bold">Effortless Memory Capture</h4>

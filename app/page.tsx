@@ -8,7 +8,7 @@ const Page = () => {
       <Component.Home/>
       <Component.AsParents/>
       <Component.Features/>
-      <Component.Aboutus/>
+      {/* <Component.Aboutus/> */}
     </>
   );
 };

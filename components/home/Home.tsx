@@ -14,7 +14,7 @@ const Home = () => {
       <div className='z-[999] flex flex-col items-evenly justify-evenly h-full'>
         <div className='flex  flex-col items-start gap-[1rem]'>
           <h1 className='text-[4rem] text-white2 font-bold'>
-            Capture Your Family's Precious Memories with LillDiary
+            Capture Your Family&apos;s Precious Memories with LillDiary
           </h1>
           <p className='text-white2 text-[1.5rem] w-[90%] '>
             Welcome to LillDiary! We help parents to create an online diary for collecting precious memories and milestones of their little ones, from birth through the years.
@@ -28,7 +28,7 @@ const Home = () => {
       </div>
       <div className='w-[80%] z-[999]  h-[100%] flex flex-col justify-between items-end'>
         <div>{""}</div>
-        <p className='z-[999]  text-[1.4rem] w-[65%] text-white'>" With LillDiary, you'll never miss another laugh, first step, or family adventure. Save it all in one place to revisit for years to come. "</p>
+        <p className='z-[999]  text-[1.4rem] w-[65%] text-white'>&quot; With LillDiary, you&apos;ll never miss another laugh, first step, or family adventure. Save it all in one place to revisit for years to come. &quot;</p>
       </div>
     </div>
   </div>

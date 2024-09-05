@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontMono } from "@/config/fonts";
-import { Navbar, Footer } from "@/components";  // Ensure correct import
+import components from "@/components/index";  // Ensure correct import
 
 export const metadata: Metadata = {
   title: {
@@ -36,11 +36,11 @@ export default function RootLayout({
       <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="flex flex-col">
-            <Navbar />
+            <components.Navbar />
             <main>
               {children}
             </main>
-            <Footer />
+            <components.Footer />
           </div>
         </Providers>
       </body>

@@ -4,6 +4,9 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import asset from "@/public/assets";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
+
+// Add the following line at the top of your file:
+declare module 'react-scroll';
 // import Link from "next/link";
 // import NextLink from "next/link"; 
 

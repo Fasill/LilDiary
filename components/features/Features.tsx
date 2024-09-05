@@ -4,7 +4,7 @@ import asset from "@/public/assets";
 
 const Features = () => {
   return (
-    <div className='w-[100%] flex flex-wrap items-center justify-center gap-8 pb-[5rem] p-[1rem]'>
+    <div className='w-[100%] flex flex-wrap items-center justify-center gap-8 pb-[5rem] p-[3rem] bg-slate-100'>
       <Components.FeatCard 
         imageUrl={asset.featureImg1.src} 
         title='Effortless Memory Capture' 

@@ -1,18 +1,36 @@
+'use client'
 import React from 'react';
 import Component from '@/components';
 
-
-const Page = () => {
+const Page: React.FC = () => {
   return (
-    <>
-      <Component.Home/>
-      <Component.AsParents/>
-      <Component.Features/>
-      <Component.WhyUs/>
-      <Component.Aboutus/>
-      <Component.OurStory/>
-      {/* <Component.Aboutus/> */}
-    </>
+    <div>
+      <div id="home">
+        <Component.Home />
+      </div>
+      <div id="features">
+        <Component.AsParents />
+        <Component.Features />
+      </div>
+      <div id="whyUs">
+        <Component.WhyUs />
+      </div>
+      <div id="aboutUs">
+        <Component.Aboutus />
+      </div>
+      <div id="ourStory">
+        <Component.OurStory />
+      </div>
+      <div id="testimonial">
+        <Component.Testimonial />
+      </div>
+      <div id="contact">
+        <Component.Contact />
+      </div>
+      <div id="footer">
+        <Component.Footer/>
+      </div>
+    </div>
   );
 };
 

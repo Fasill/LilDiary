@@ -4,7 +4,8 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import asset from "@/public/assets";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
-import NextLink from "next/link"; 
+// import Link from "next/link";
+// import NextLink from "next/link"; 
 
 const NavbarComponent: React.FC = () => {
   const [activeNavItem, setActiveNavItem] = useState<string | null>(null);
@@ -15,12 +16,10 @@ const NavbarComponent: React.FC = () => {
 
   return (
     <Navbar maxWidth={"full"} className="bg-white p-[0.4rem] md:pl-[5rem] md:pr-[5rem] z-[9999]">
-      <NextLink href="/" passHref>
         <NavbarBrand className="flex gap-3 max-md:items-center max-md:justify-center cursor-pointer">
           <Image src={asset.logo} alt="logo" width={100} height={100} />
           <h1 className="text-[1.7rem] font-bold max-md:hidden">LilDiary</h1>
         </NavbarBrand>
-      </NextLink>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
           <ScrollLink
@@ -88,9 +87,18 @@ const NavbarComponent: React.FC = () => {
           </ScrollLink>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color={"primary"} href="#" variant="flat" className="text-xl text-[#ff49bf] font-bold ">
-            Contact Us
-          </Button>
+            <Button color="primary" variant="flat" className="text-xl text-[#ff49bf] font-bold">
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-70}
+            className="cursor-pointer"
+          >
+              Contact Us
+          </ScrollLink>
+            </Button>
         </NavbarItem>
       </NavbarContent>
     </Navbar>

@@ -9,6 +9,7 @@ import WhyUs from "./subComponents/WhyUs";
 import OurStory from "./ourStory/OurStory";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
+import Testimonial from "./testimonial/Testimonial";
 
 const Component= {
     Navbar:NavbarComponent,
@@ -21,7 +22,8 @@ const Component= {
     WhyUs,
     OurStory,
     Contact,
-    Footer
+    Footer,
+    Testimonial
 };
 
 export default Component;

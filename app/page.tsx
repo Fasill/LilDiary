@@ -21,6 +21,9 @@ const Page: React.FC = () => {
       <div id="ourStory">
         <Component.OurStory />
       </div>
+      <div id="testimonial">
+        <Component.Testimonial />
+      </div>
       <div id="contact">
         <Component.Contact />
       </div>

@@ -3,7 +3,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const Page = () => {
   return (
-    <div className="p-8 md:p-[5rem] h-[60vh] flex items-center justify-center">
+    <div className="p-8 md:p-[5rem] h-[50vh] flex items-center justify-center">
       <div className="text-center md:text-left ">
         <FaQuoteLeft size={40} className="text-secondary mx-auto md:mx-0" />
         <p className="text-lg md:text-[2rem] mt-4 whitespace-pre-line">

@@ -6,7 +6,7 @@ import asset from '@/public/assets';
 
 const OurStory = () => {
   return (
-    <div className="bg-slate-100 py-20 p-[6rem]">
+    <div className="bg-slate-100 py-20 p-2 md:p-[6rem]">
       <div className="container mx-auto px-4 md:px-8 flex flex-col gap-[5rem]">
         <div className="text-center mb-12 flex flex-col gap-[2rem]">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Our Story</h1>

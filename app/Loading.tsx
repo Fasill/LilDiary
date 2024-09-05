@@ -5,8 +5,8 @@ import Image from "next/image";
 import assets from "@/public/assets";
 
 const Loading = () => {
-  const [isFadingOut, setIsFadingOut] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isFadingOut, setIsFadingOut] = useState<Boolean>(false);
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {

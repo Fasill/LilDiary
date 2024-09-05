@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react';
 import asset from '@/public/assets';
@@ -14,7 +16,7 @@ const NavbarComponent: React.FC = () => {
   const handleNavItemClick = (name: string, route: string) => {
     setActiveNavItem(name);
     router.push(route);
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); 
   };
 
   const toggleMenu = () => {
@@ -28,10 +30,10 @@ const NavbarComponent: React.FC = () => {
           <Image src={asset.logo} alt="logo" width={100} height={100} />
           <h1 className="text-[1.7rem] font-bold max-md:hidden">LilDiary</h1>
         </NavbarBrand>
-
+        
         {/* Burger Icon for mobile view */}
-        <div className="sm:hidden ml-auto cursor-pointer" onClick={toggleMenu} aria-label="Toggle menu">
-          {isMenuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
+        <div className="sm:hidden ml-auto cursor-pointer" onClick={toggleMenu}>
+          {isMenuOpen ? <FaTimes className="text-2xl"/> : <FaBars className="text-2xl"/>}
         </div>
 
         {/* Full menu for larger screens */}
@@ -60,21 +62,11 @@ const NavbarComponent: React.FC = () => {
           <NavbarItem>
             <Dropdown>
               <DropdownTrigger>
-                <p
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded={isMenuOpen}
-                  tabIndex={0}
-                  className={`flex items-center justify-center text-xl cursor-pointer ${activeNavItem === 'privacyPolicy' || activeNavItem === 'termsAndConditions' ? 'font-bold text-primary' : ''}`}
-                  onClick={toggleMenu}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      toggleMenu();
-                    }
-                  }}
+                <NavbarItem
+                  className={` flex items-center justify-center text-xl cursor-pointer ${activeNavItem === 'privacyPolicy' || activeNavItem === 'termsAndConditions' ? 'font-bold text-primary' : ''}`}
                 >
                   Policy <FaAngleDown />
-                </p>
+                </NavbarItem>
               </DropdownTrigger>
               <DropdownMenu aria-label="Policy Menu">
                 <DropdownItem key="privacy" onClick={() => handleNavItemClick('privacyPolicy', '/privacyPolicy')}>
@@ -98,73 +90,61 @@ const NavbarComponent: React.FC = () => {
             </Button>
           </NavbarItem>
         </NavbarContent>
+      <div className={`fixed top-0 right-0 h-[100lvh] w-[250px] bg-[#3a1c1cc7] shadow-lg z-[10000] transform sm:hidden text-[white] ${isMenuOpen ? ' translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+        <div className="flex flex-col gap-6 p-6">
+          <NavbarItem
+            className={`text-xl cursor-pointer ${activeNavItem === 'home' ? 'font-bold text-primary' : ''}`}
+            onClick={() => handleNavItemClick('home', '/')}
+          >
+            Home
+          </NavbarItem>
+          <NavbarItem
+            className={`text-xl cursor-pointer ${activeNavItem === 'aboutUs' ? 'font-bold text-primary' : ''}`}
+            onClick={() => handleNavItemClick('aboutUs', '/about')}
+          >
+            About Us
+          </NavbarItem>
+          <NavbarItem
+            className={`text-xl cursor-pointer ${activeNavItem === 'ourStory' ? 'font-bold text-primary' : ''}`}
+            onClick={() => handleNavItemClick('ourStory', '/story')}
+          >
+            Our Story
+          </NavbarItem>
+          
+          {/* Dropdown for Policy */}
+          <Dropdown>
+            <DropdownTrigger>
+              <p
+                className={`self-start flex items-center justify-center text-xl cursor-pointer ${activeNavItem === 'privacyPolicy' || activeNavItem === 'termsAndConditions' ? 'font-bold text-primary' : ''}`}
+              >
+                Policy <FaAngleDown />
+              </p>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Policy Menu">
+              <DropdownItem key="privacy" onClick={() => handleNavItemClick('privacyPolicy', '/privacyPolicy')}>
+                Privacy Policy
+              </DropdownItem>
+              <DropdownItem key="terms" onClick={() => handleNavItemClick('termsAndConditions', '/termsAndConditions')}>
+                Terms & Conditions
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
 
-        {/* Sidebar menu for mobile view */}
-        <div
-          className={`fixed top-0 right-0 h-screen w-[250px] bg-[#3a1c1cc7] shadow-lg z-[10000] transform sm:hidden text-white ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}
-          aria-label="Mobile menu"
-        >
-          <div className="flex flex-col gap-6 p-6">
-            <NavbarItem
-              className={`text-xl cursor-pointer ${activeNavItem === 'home' ? 'font-bold text-primary' : ''}`}
-              onClick={() => handleNavItemClick('home', '/')}
-            >
-              Home
-            </NavbarItem>
-            <NavbarItem
-              className={`text-xl cursor-pointer ${activeNavItem === 'aboutUs' ? 'font-bold text-primary' : ''}`}
-              onClick={() => handleNavItemClick('aboutUs', '/about')}
-            >
-              About Us
-            </NavbarItem>
-            <NavbarItem
-              className={`text-xl cursor-pointer ${activeNavItem === 'ourStory' ? 'font-bold text-primary' : ''}`}
-              onClick={() => handleNavItemClick('ourStory', '/story')}
-            >
-              Our Story
-            </NavbarItem>
-
-            {/* Dropdown for Policy */}
-            <Dropdown>
-              <DropdownTrigger>
-                <p
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded={isMenuOpen}
-                  tabIndex={0}
-                  className={`self-start flex items-center justify-center text-xl cursor-pointer ${activeNavItem === 'privacyPolicy' || activeNavItem === 'termsAndConditions' ? 'font-bold text-primary' : ''}`}
-                  onClick={toggleMenu}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      toggleMenu();
-                    }
-                  }}
-                >
-                  Policy <FaAngleDown />
-                </p>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="Policy Menu">
-                <DropdownItem key="privacy" onClick={() => handleNavItemClick('privacyPolicy', '/privacyPolicy')}>
-                  Privacy Policy
-                </DropdownItem>
-                <DropdownItem key="terms" onClick={() => handleNavItemClick('termsAndConditions', '/termsAndConditions')}>
-                  Terms & Conditions
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-
-            <Button
-              color="primary"
-              variant="flat"
-              className={`text-xl font-bold ${activeNavItem === 'contactUs' ? 'text-[#ff49bf]' : ''}`}
-              onClick={() => handleNavItemClick('contactUs', '/contactus')}
-            >
-              Contact Us
-            </Button>
-          </div>
+          <Button
+            color="primary"
+            variant="flat"
+            className={`text-xl font-bold ${activeNavItem === 'contactUs' ? 'text-[#ff49bf]' : ''}`}
+            onClick={() => handleNavItemClick('contactUs', '/contactus')}
+          >
+            Contact Us
+          </Button>
         </div>
+      </div>
       </Navbar>
+
+      {/* Right Slider for mobile view */}
     </div>
+
   );
 };
 

@@ -41,8 +41,8 @@ const Footer = () => {
         </div>
 
         <ul className='text-[12px] md:text-[13.2px] text-white2 font-[700] flex flex-col md:flex-row gap-[1.5rem] md:gap-[2rem] items-center max-sm:hidden'>
-          {['Home', 'About us', 'Our Story', 'Privacy Policy', 'Terms & Conditions' ,'Contact Us' ].map((section) => (
-            <li key={section} className='cursor-pointer'>
+          {['Home', 'About us', 'Our Story', 'Privacy Policy', 'Terms & Conditions' ,'Contact Us' ].map((section,index) => (
+            <li key={index} className='cursor-pointer'>
            
                 {section.charAt(0).toUpperCase() + section.slice(1)}
             </li>

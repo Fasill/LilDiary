@@ -15,7 +15,7 @@ const Aboutus = () => {
               Preserve Precious Family Moments with LillDiary
             </h1>
             <p className='text-[16px] md:text-[24px]'>
-              LillDiary began simply - as new parents struggling to preserve our countless photos and videos of our daughter's earliest giggles and steps. We filled up phones and hard drives faster than we could organize and back up these irreplaceable memories.
+              LillDiary began simply - as new parents struggling to preserve our countless photos and videos of our daughter&apos;s earliest giggles and steps. We filled up phones and hard drives faster than we could organize and back up these irreplaceable memories.
             </p>
           </div>
           <div>

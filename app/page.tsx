@@ -28,7 +28,7 @@ const Page: React.FC = () => {
             isFadingOut ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <Image src={assets.logo.src} width={350} height={400} alt="Loading..." />
+          <Image src={assets.logo.src} width={350} height={350} alt="Loading..." />
         </div>
       )}
       <div className={isLoading ? 'invisible' : 'fade-in'}>

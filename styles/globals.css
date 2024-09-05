@@ -4,10 +4,6 @@
 @tailwind utilities;
 
 
-html, body {
-  font-family: 'Poppins', sans-serif;
-}
-
 .myHome {
     background-image: url('../public/assets/features/img4.jpg');
     background-size: cover; 
@@ -16,6 +12,10 @@ html, body {
     transform: scaleX(-1); 
 
 }
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .whyUs {
   background-image: url('../public/assets/backgrounds/bg4.jpg');
   background-size: 100%; /* Zooms out the background image */

@@ -8,6 +8,10 @@ const Page = () => {
       <Component.Home/>
       <Component.AsParents/>
       <Component.Features/>
+      <Component.WhyUs/>
+      <Component.Aboutus/>
+
+
       {/* <Component.Aboutus/> */}
     </>
   );

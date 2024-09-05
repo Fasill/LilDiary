@@ -5,6 +5,8 @@ import Page from "./asParents/Page";
 import Features from "./features/Features";
 import FeatureCards from "./cards/FeatureCards";
 import FeatCard from "./cards/FeatCard";
+import WhyUs from "./subComponents/WhyUs";
+
 const Component= {
     Navbar,
     Home,
@@ -12,7 +14,8 @@ const Component= {
     AsParents:Page,
     Features,
     FeatureCards,
-    FeatCard
+    FeatCard,
+    WhyUs
 };
 
 export default Component;

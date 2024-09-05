@@ -5,7 +5,7 @@
 .myHome {
     background-image: url('../public/assets/features/img4.jpg');
     background-size: cover; 
-    background-position: center;
+    background-position: center 10px;
     background-repeat: no-repeat; 
     transform: scaleX(-1); 
 

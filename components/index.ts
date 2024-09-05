@@ -6,7 +6,7 @@ import Features from "./features/Features";
 import FeatureCards from "./cards/FeatureCards";
 import FeatCard from "./cards/FeatCard";
 import WhyUs from "./subComponents/WhyUs";
-
+import OurStory from "./ourStory/OurStory";
 const Component= {
     Navbar,
     Home,
@@ -15,7 +15,8 @@ const Component= {
     Features,
     FeatureCards,
     FeatCard,
-    WhyUs
+    WhyUs,
+    OurStory
 };
 
 export default Component;

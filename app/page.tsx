@@ -9,13 +9,12 @@ const Page: React.FC = () => {
   const [isFadingOut, setIsFadingOut] = useState(false); // To handle fade-out transition
 
   useEffect(() => {
-    // Simulate the loading of the 'Home' component or external data
     const timer = setTimeout(() => {
-      setIsFadingOut(true); // Start fading out
+      setIsFadingOut(true); 
       setTimeout(() => {
-        setIsLoading(false); // Remove loading screen after fade-out
-      }, 300); // Set the same duration as the fade-out animation
-    }, 1000); // Simulate a 2-second loading time (adjust as needed)
+        setIsLoading(false);
+      }, 300);
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -51,12 +50,8 @@ const Page: React.FC = () => {
         <div id="testimonial">
           <Component.Testimonial />
         </div>
-        <div id="contact">
-          <Component.Contact />
-        </div>
-        <div id="footer">
-          <Component.Footer />
-        </div>
+        
+
       </div>
     </>
   );

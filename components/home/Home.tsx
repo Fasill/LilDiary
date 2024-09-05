@@ -10,12 +10,11 @@ import { FaGooglePlay } from "react-icons/fa";
 const Home = () => {
 
   return (
-    <div className="myHome relative h-[100lvh]">
-    {/* <div className=" h-full w-full absolute z-0"></div> */}
+    <div className="relative h-[100lvh]">
+    <div className="myHome h-full w-full absolute z-0"></div>
     <div className="flex items-center justify-between h-full p-[5rem]">
       <div className='z-[999]  flex flex-col items-center justify-between h-full w-[100%]'>
-        <div className='flex  flex-col items-center justi
-        fy-center self-start gap-[1rem]  w-[100%]'>
+        <div className='flex  flex-col items-center justify-center self-start gap-[1rem]  w-[100%]'>
           <h1 className='text-[3rem]  font-bold max-md:text-[2rem] text-center text-white bg-[#817c7c8c] p-[10px] pl-[30px] pr-[30px] rounded-md' >
             Capture Your Family&apos;s Precious Memories with LillDiary
           </h1>
@@ -23,7 +22,7 @@ const Home = () => {
           We help parents create online diaries to capture their child&lsquo;s precious milestones.                   </p>
     
         </div>
-        <div  className='flex items-center justify-start w-[100%]'>
+        <div  className='flex items-center justify-end w-[100%]'>
           <div className=' flex flex-col items-center justify-center gap-[2rem] max-md:hidden'>
             <Image src={asset.iphone} alt='home' width={350} height={100} />
             <div className=' self-end flex gap-[2rem] '>

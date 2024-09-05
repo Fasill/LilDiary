@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className=" flex flex-col">
-            <component.Navbar/>s
+            <component.Navbar/>
             <main>
               {children}
           </main>

@@ -1,11 +1,9 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-
 import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontMono } from "@/config/fonts";
-import component from "@/components/index";
+import components from "@/components/index";  // Ensure correct import
 
 export const metadata: Metadata = {
   title: {
@@ -32,15 +30,17 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        {/* Include other metadata or link tags here if needed */}
+      </head>
       <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className=" flex flex-col">
-            <component.Navbar/>
+          <div className="flex flex-col">
+            <components.Navbar />
             <main>
               {children}
-          </main>
-            <component.Footer />
+            </main>
+            <components.Footer />
           </div>
         </Providers>
       </body>

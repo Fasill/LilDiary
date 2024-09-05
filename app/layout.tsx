@@ -1,11 +1,11 @@
-// app/layout.tsx (or your main layout file)
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
+
 import { Providers } from "./providers";
+
 import { siteConfig } from "@/config/site";
 import { fontMono } from "@/config/fonts";
 import component from "@/components/index";
-import LoadingSpinner from "./Loading";
 
 export const metadata: Metadata = {
   title: {
@@ -25,24 +25,26 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  
   return (
-    <>
-      <html suppressHydrationWarning lang="en">
-        <head />
-        <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
-          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-            <LoadingSpinner />
-            <div className="flex flex-col">
-              <component.Navbar />
-              <main>
-                {children}
-              </main>
-              <component.Footer />
-            </div>
-          </Providers>
-        </body>
-      </html>
-    </>
+    <html suppressHydrationWarning lang="en">
+      <head />
+      <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+          <div className=" flex flex-col">
+            <component.Navbar/>s
+            <main>
+              {children}
+          </main>
+            <component.Footer />
+          </div>
+        </Providers>
+      </body>
+    </html>
   );
 }

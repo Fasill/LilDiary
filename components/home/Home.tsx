@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="relative h-[100lvh]">
-    <div className="myHome h-full w-full absolute z-0"></div>
+    <div className="h-full w-full absolute z-0 bg-[url('/assets/features/img4.jpg')] bg-cover bg-[center_10px] bg-no-repeat -scale-x-100"></div>
     <div className="flex items-center justify-between h-full p-[5rem]">
       <div className='z-[999]  flex flex-col items-center justify-between h-full w-[100%]'>
         <div className='flex  flex-col items-center justify-center self-start gap-[1rem]  w-[100%]'>

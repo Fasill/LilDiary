@@ -1,4 +1,4 @@
-import Navbar from "./navigation/Navbar";
+import NavbarComponent from "./navigation/NavbarComponent";
 import Home from "./home/Home";
 import Aboutus from "./aboutUs/Aboutus";
 import Page from "./asParents/Page";
@@ -7,8 +7,11 @@ import FeatureCards from "./cards/FeatureCards";
 import FeatCard from "./cards/FeatCard";
 import WhyUs from "./subComponents/WhyUs";
 import OurStory from "./ourStory/OurStory";
+import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
+
 const Component= {
-    Navbar,
+    Navbar:NavbarComponent,
     Home,
     Aboutus,
     AsParents:Page,
@@ -16,7 +19,9 @@ const Component= {
     FeatureCards,
     FeatCard,
     WhyUs,
-    OurStory
+    OurStory,
+    Contact,
+    Footer
 };
 
 export default Component;

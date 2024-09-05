@@ -13,6 +13,11 @@ import featureImg8 from '@/public/assets/features/img8.jpg'
 import iphone from '@/public/assets/backgrounds/iphone.png'
 import ourStoryImg1 from '@/public/assets/ourStory/ourStoryImg1.jpg'
 import ourStoryImg2 from '@/public/assets/ourStory/ourStoryImg2.jpg'
+import storyimg from '@/public/assets/ourStory/storyimg.webp'
+import storyimg1 from '@/public/assets/ourStory/storyimg1.jpeg'
+import storyimg2 from '@/public/assets/ourStory/stotyimg2.jpeg'
+import download from '@/public/assets/ourStory/download.webp'
+
 const asset = {
     logo,
     bg1,
@@ -27,7 +32,12 @@ const asset = {
     featureImg8,
     iphone,
     ourStoryImg1,
-    ourStoryImg2
+    ourStoryImg2,
+    storyimg,
+    storyimg1,
+    storyimg2,
+    download
+
 
 };
 export default asset;

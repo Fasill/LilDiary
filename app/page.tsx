@@ -10,8 +10,7 @@ const Page = () => {
       <Component.Features/>
       <Component.WhyUs/>
       <Component.Aboutus/>
-
-
+      <Component.OurStory/>
       {/* <Component.Aboutus/> */}
     </>
   );

@@ -48,7 +48,7 @@ const OurStory = () => {
           </div>
           <div className="">
             <p className="text-2xl text-gray-700 leading-relaxed">
-              Meanwhile, my wife filled notebook after notebook with handwritten accounts of playdates, conversations, and observations on our daughter's growth. Our extended families and friends demanded regular photo and story updates.
+              Meanwhile, my wife filled notebook after notebook with handwritten accounts of playdates, conversations, and observations on our daughter&apos;s growth. Our extended families and friends demanded regular photo and story updates.
             </p>
           </div>
         </div>

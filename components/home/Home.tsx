@@ -17,7 +17,7 @@ const Home = () => {
         <div className='flex  flex-col items-center justi
         fy-center self-start gap-[1rem]  w-[100%]'>
           <h1 className='text-[3rem]  font-bold max-md:text-[2rem] text-center text-white bg-[#817c7c8c] p-[10px] pl-[30px] pr-[30px] rounded-md' >
-            Capture Your <span className=''>Family&apos;s Precious</span> Memories with LillDiary
+            Capture Your Family&apos;s Precious Memories with LillDiary
           </h1>
           <p className='text-black text-[1.5rem] w-[80%] text-center max-lg:hidden'>
           We help parents create online diaries to capture their child&lsquo;s precious milestones.                   </p>

@@ -21,24 +21,14 @@ const NavbarComponent: React.FC = () => {
       case '/':
         setActiveNavItem('home');
         break;
-      case '/about':
-        setActiveNavItem('aboutUs');
-        break;
+     
       case '/blog':
         setActiveNavItem('blog');
         break;
       case '/story':
         setActiveNavItem('ourStory');
         break;
-      case '/privacyPolicy':
-        setActiveNavItem('privacyPolicy');
-        break;
-      case '/termsAndConditions':
-        setActiveNavItem('termsAndConditions');
-        break;
-      case '/contactus':
-        setActiveNavItem('contactUs');
-        break;
+     
       default:
         setActiveNavItem(null);
         break;
@@ -69,58 +59,22 @@ const NavbarComponent: React.FC = () => {
 
         {/* Full menu for larger screens */}
         <NavbarContent className="hidden sm:flex gap-4" justify="end">
+         
+         
           <NavbarItem
-            className={`text-md cursor-pointer ${activeNavItem === 'home' ? 'font-bold text-primary' : ''}`}
-            onClick={() => handleNavItemClick('home', '/')}
-          >
-            Home
-          </NavbarItem>
-          <NavbarItem
-            className={`text-md cursor-pointer ${activeNavItem === 'aboutUs' ? 'font-bold text-primary' : ''}`}
-            onClick={() => handleNavItemClick('aboutUs', '/about')}
-          >
-            About Us
-          </NavbarItem>
-          <NavbarItem
-            className={`text-md cursor-pointer ${activeNavItem === 'blog' ? 'font-bold text-primary' : ''}`}
+            className={`text-lg cursor-pointer ${activeNavItem === 'blog' ? 'font-bold text-primary' : ''}`}
             onClick={() => handleNavItemClick('blog', '/blog')}
           >
             Blog
           </NavbarItem>
           <NavbarItem
-            className={`text-md cursor-pointer ${activeNavItem === 'ourStory' ? 'font-bold text-primary' : ''}`}
+            className={`text-lg cursor-pointer ${activeNavItem === 'ourStory' ? 'font-bold text-primary' : ''}`}
             onClick={() => handleNavItemClick('ourStory', '/story')}
           >
             Our Story
           </NavbarItem>
 
-          {/* Dropdown for Policy */}
-          <NavbarItem>
-            <Dropdown>
-              <DropdownTrigger>
-                <p
-                  className={` flex items-center justify-center text-md cursor-pointer ${activeNavItem === 'privacyPolicy' || activeNavItem === 'termsAndConditions' ? 'font-bold text-primary' : ''}`}
-                >
-                  Policy <FaAngleDown />
-                </p>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="Policy Menu">
-                <DropdownItem key="privacy" onClick={() => handleNavItemClick('privacyPolicy', '/privacyPolicy')}>
-                  Privacy Policy
-                </DropdownItem>
-                <DropdownItem key="terms" onClick={() => handleNavItemClick('termsAndConditions', '/termsAndConditions')}>
-                  Terms & Conditions
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </NavbarItem>
-
-          <NavbarItem
-              className={`text-md cursor-pointer  ${activeNavItem === 'contactUs' ? 'text-[#ff49bf] font-bold' : ''}`}
-              onClick={() => handleNavItemClick('contactUs', '/contactus')}
-            >
-              Contact Us
-            </NavbarItem>
+         
         </NavbarContent>
 
         {/* Right Slider for mobile view */}

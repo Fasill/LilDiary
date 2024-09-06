@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontMono } from "@/config/fonts";
-import components from "@/components/index";  // Ensure correct import
+import components from "@/components/index"; // Ensure correct import
 
 export const metadata: Metadata = {
   title: {
@@ -30,16 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        {/* Include other metadata or link tags here if needed */}
-      </head>
-      <body className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}>
+      <head>{/* Include other metadata or link tags here if needed */}</head>
+      <body
+        className={`min-h-screen bg-background font-sans antialiased ${fontMono.variable}`}
+      >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="flex flex-col">
             <components.Navbar />
-            <main>
-              {children}
-            </main>
+            <main>{children}</main>
             <components.Footer />
           </div>
         </Providers>

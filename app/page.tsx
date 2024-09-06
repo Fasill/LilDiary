@@ -1,22 +1,20 @@
-'use client'
-import React, { useState, useEffect } from 'react';
-import Component from '@/components';
-import assets from '@/public/assets';
-import Image from 'next/image';
+"use client";
+import React, { useState, useEffect } from "react";
+import Component from "@/components";
+import assets from "@/public/assets";
+import Image from "next/image";
 
 const Page: React.FC = () => {
-
-
   return (
     <>
-      
-      <div >
+      <div>
         <div id="home">
           <Component.Home />
         </div>
         <div id="features">
           <Component.AsParents />
           <Component.Features />
+          <Component.Startcreating />
         </div>
         <div id="whyUs">
           <Component.WhyUs />
@@ -30,8 +28,6 @@ const Page: React.FC = () => {
         <div id="testimonial">
           <Component.Testimonial />
         </div>
-        
-
       </div>
     </>
   );

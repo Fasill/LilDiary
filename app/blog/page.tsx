@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const page = () => {
   return (
@@ -6,7 +6,7 @@ const page = () => {
       <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg animate-pulse">
         {/* Title */}
         <div className="h-8 bg-gray-300 rounded w-3/4 mb-4"></div>
-        
+
         {/* Date */}
         <div className="h-4 bg-gray-300 rounded w-1/4 mb-6"></div>
 

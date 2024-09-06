@@ -3,12 +3,9 @@ import React from 'react'
 import asset from '@/public/assets';
 import Image from 'next/image';
 import { Button } from '@nextui-org/button';
-import { FaApple, FaGooglePlay,FaFacebookSquare } from 'react-icons/fa';
-import { Link as ScrollLink } from "react-scroll";
+import { FaApple, FaGooglePlay, FaFacebookSquare } from 'react-icons/fa';
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import Link from 'next/link';
-
-declare module 'react-scroll';
 
 const Footer = () => {
   return (
@@ -40,13 +37,29 @@ const Footer = () => {
           </Button>
         </div>
 
+        {/* Navigation Links */}
         <ul className='text-[12px] md:text-[13.2px] text-white2 font-[700] flex flex-col md:flex-row gap-[1.5rem] md:gap-[2rem] items-center max-sm:hidden'>
-          {['Home', 'About us', 'Our Story', 'Privacy Policy', 'Terms & Conditions' ,'Contact Us' ].map((section,index) => (
-            <li key={index} className='cursor-pointer'>
-           
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-            </li>
-          ))}
+          <li className='cursor-pointer'>
+            <Link href="/">Home</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/story">Our Story</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/privacyPolicy">Privacy Policy</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/termsAndConditions">Terms & Conditions</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href="/contactus">Contact Us</Link>
+          </li>
         </ul>
 
         {/* Social Media Icons */}

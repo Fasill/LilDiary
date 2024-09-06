@@ -7,7 +7,7 @@ import FeatCard from '@/components/cards/FeatCard';
 
 const OurStoryPage = () => {
   return (
-    <div className="bg-gray-100 py-20 px-4 md:px-[6rem]">
+    <div className="mt-[4rem]  bg-gray-100 py-20 px-4 md:px-[6rem]">
       <div className="container mx-auto flex flex-col gap-[4rem]">
         
         {/* Title Section */}

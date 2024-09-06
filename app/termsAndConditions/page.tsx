@@ -2,7 +2,7 @@ import React from 'react';
 
 const TermsAndConditionsPage = () => {
   return (
-    <div className="flex items-center justify-center md:p-12 bg-gray-50">
+    <div className="mt-[4rem] flex items-center justify-center md:p-12 bg-gray-50">
       <div className="flex flex-col w-full max-w-3xl gap-12 p-8 bg-white rounded-lg shadow-lg">
         <div className="flex flex-col items-center gap-6">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Terms and Conditions</h1>

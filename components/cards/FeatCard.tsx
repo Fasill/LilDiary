@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { Card, Image } from "@nextui-org/react";
 
@@ -8,7 +8,11 @@ type FeatCardProps = {
   description: string;
 };
 
-const FeatCard: React.FC<FeatCardProps> = ({ imageUrl, title, description }) => {
+const FeatCard: React.FC<FeatCardProps> = ({
+  imageUrl,
+  title,
+  description,
+}) => {
   return (
     <div className="w-[350px] flex flex-col gap-[1rem]">
       <Card isFooterBlurred radius="lg" className="border-none">

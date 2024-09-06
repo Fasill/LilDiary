@@ -10,20 +10,22 @@ import OurStory from "./ourStory/OurStory";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 import Testimonial from "./testimonial/Testimonial";
+import Startcreating from "./asParents/Startcreating";
 
-const Component= {
-    Navbar:NavbarComponent,
-    Home,
-    Aboutus,
-    AsParents:Page,
-    Features,
-    FeatureCards,
-    FeatCard,
-    WhyUs,
-    OurStory,
-    Contact,
-    Footer,
-    Testimonial
+const Component = {
+  Navbar: NavbarComponent,
+  Home,
+  Aboutus,
+  AsParents: Page,
+  Features,
+  FeatureCards,
+  FeatCard,
+  WhyUs,
+  OurStory,
+  Contact,
+  Footer,
+  Testimonial,
+  Startcreating,
 };
 
 export default Component;

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const AboutUsPage = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-[4rem]">
+  return ( 
+    <div className="m-[4rem] min-h-screen flex items-center justify-center bg-gray-100 p-[4rem]">
       <div className="bg-white shadow-lg rounded-lg p-[3rem] w-full max-w-4xl space-y-8 text-center">
         {/* Title Section */}
         <div className="text-center">

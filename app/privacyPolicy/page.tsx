@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const page = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div className="mt-[4rem]  min-h-screen flex flex-col justify-center items-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <Head>
         <title>Privacy Policy - LillDiary</title>
       </Head>

@@ -10,12 +10,12 @@ import { FaGooglePlay } from "react-icons/fa";
 const Home = () => {
 
   return (
-    <div className="relative h-[100lvh]">
+    <div className="relative h-[100lvh] mt-[4.7rem]">
     <div className="h-full w-full absolute z-0 bg-[url('/assets/features/img4.jpg')] bg-cover bg-[center_3px] bg-no-repeat -scale-x-100"></div>
-    <div className="flex items-center justify-between h-full p-[5rem]">
+    <div className="flex items-center justify-between h-full sm:p-[5rem] max-sm:p-[2rem]">
       <div className='z-[999]  flex flex-col items-center justify-between h-full w-[100%]'>
         <div className='flex  flex-col items-center justify-center self-start gap-[1rem]  w-[100%]'>
-          <h1 className='text-[3rem]  font-bold max-md:text-[2rem] text-center text-white bg-[#817c7c8c] p-[10px] pl-[30px] pr-[30px] rounded-md' >
+          <h1 className='text-[3rem]  font-bold max-md:text-[1.5rem] text-center text-white bg-[#817c7c8c] p-[10px] pl-[30px] pr-[30px] rounded-md' >
             Capture Your Family&apos;s Precious Memories with LillDiary
           </h1>
           <p className='text-black text-[1.5rem] w-[80%] text-center max-lg:hidden'>
@@ -33,7 +33,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
     </div>
   </div>
   )

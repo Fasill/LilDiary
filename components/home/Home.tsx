@@ -9,7 +9,7 @@ import { FaGooglePlay } from "react-icons/fa";
 const Home: React.FC = () => {
   useEffect(() => {
     const img = new (window.Image as any)();
-    img.src = "/assets/backgrounds/lastbg.jpg";
+    img.src = "/assets/backgrounds/lastbg2.jpg";
     img.onload = () => {
       const lazyBackground = document.querySelector(".lazy-background");
       if (lazyBackground instanceof HTMLElement) {

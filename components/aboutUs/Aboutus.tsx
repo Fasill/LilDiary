@@ -7,7 +7,7 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div className=" flex items-center justify-center h-[70lvh] px-5 md:px-[5rem] overflow-hidden">
+    <div className=" flex items-center justify-center  px-5 md:p-[6rem] overflow-hidden">
       <div className="container flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-[50%] flex flex-col gap-6 md:gap-10">
           <div className="flex flex-col gap-6 md:gap-10">

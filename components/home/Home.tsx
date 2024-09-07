@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     img.onload = () => {
       const lazyBackground = document.querySelector(".lazy-background");
       if (lazyBackground instanceof HTMLElement) {
-        lazyBackground.style.backgroundImage = `url('/assets/backgrounds/lastbg.jpg')`;
+        lazyBackground.style.backgroundImage = `url('/assets/backgrounds/lastbg2.jpg')`;
       }
     };
   }, []);

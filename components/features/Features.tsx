@@ -10,6 +10,7 @@ const Features = () => {
         title="Effortless Memory Capture"
         description="Recording memories with LillDiary is simple. Our easy-to-use app and website make uploading photos, videos, and written entries a breeze. Tag memories by child, milestone, or custom category so you can quickly flip through your favorites."
       />
+      
       <Components.FeatCard
         imageUrl={asset.featureImg2.src}
         title="Automated Milestone Tracking"

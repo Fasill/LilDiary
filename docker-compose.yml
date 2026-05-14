@@ -1,0 +1,35 @@
+services:
+  web:
+    build:
+      context: .
+      target: runtime
+    image: lildiary:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  dev:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install --legacy-peer-deps && npm run dev"
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    profiles:
+      - dev
+
+  test:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install --legacy-peer-deps && npm test"
+    profiles:
+      - test

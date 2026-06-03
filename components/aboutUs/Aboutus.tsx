@@ -11,6 +11,7 @@ const Aboutus = () => {
       <div className="container flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-[50%] flex flex-col gap-6 md:gap-10">
           <div className="flex flex-col gap-6 md:gap-10">
+            
             <h1 className="text-[20px] md:text-[24px] font-bold font-sans">
               Preserve Precious Family Moments with LillDiary
             </h1>
